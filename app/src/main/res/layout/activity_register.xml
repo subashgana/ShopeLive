@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="info.androidhive.shopliv.activity.OTPActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp">
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/editText"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/signin_pw"
+            android:layout_alignStart="@+id/signin_pw"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:hint="@string/title_first_name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colortext"
+            app:font_name="CocogooseLight" />
+
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/edittextlastname"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:hint="@string/title_last_name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colortext"
+            app:font_name="CocogooseLight" />
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/edittextemailid"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_below="@+id/edittextlastname"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:hint="@string/title__signup_emailid"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colortext"
+            app:font_name="CocogooseLight" />
+
+
+        <RelativeLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/edittextemailid"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <info.androidhive.shopliv.other.MyEditText
+                android:id="@+id/myEditText3"
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_weight="4"
+                android:background="@drawable/rounded_border_edittext"
+                android:ems="10"
+                android:hint="@string/title__signup_phonenumber"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colortext"
+                app:font_name="CocogooseLight" />
+
+        </RelativeLayout>
+
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/signin_pw"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:hint="@string/title__signup_password"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colortext"
+            app:font_name="CocogooseLight" />
+
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/signin_confirm_pw"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/signin_pw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:layout_weight="7"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:hint="@string/title__signup_confirmpassword"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colortext"
+            app:font_name="CocogooseLight" />
+
+        <info.androidhive.shopliv.other.CustomTextView
+            android:id="@+id/textView9"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_below="@+id/signin_confirm_pw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="97dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/title_password_rule"
+            android:textColor="@color/dot_light_screen1"
+            android:textSize="@dimen/fab_margin"
+            app:font_name="CocogooseLight" />
+
+
+        <Switch
+            android:id="@+id/simpleSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/checkBox"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_alignStart="@+id/checkBox"
+            android:checked="true"
+            android:gravity="center"
+            android:text="I'm a buyer"
+            android:textColor="@color/dot_light_screen1"
+            android:textOff="Off"
+            android:textOn="On"
+            android:textSize="25sp" />
+
+        <info.androidhive.shopliv.other.CustomTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/simpleSwitch"
+            android:layout_alignBottom="@+id/simpleSwitch"
+            android:layout_alignLeft="@+id/customButton"
+            android:layout_alignStart="@+id/customButton"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:text="I'm a seller"
+            android:textColor="@color/dot_light_screen1"
+            app:font_name="CocogooseLight" />
+        <!--25sp displayed text size-->
+
+
+        <info.androidhive.shopliv.other.CustomButton
+            android:id="@+id/button_register"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_border_button"
+            android:text="@string/title_register"
+            android:textColorHint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/logo" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:text="@string/title_agree_terms" />
+
+
+        <info.androidhive.shopliv.other.CustomButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/customButton"
+            android:layout_alignBottom="@+id/customButton"
+            android:layout_alignLeft="@+id/button_register"
+            android:layout_alignStart="@+id/button_register"
+            android:background="@drawable/rounded_border_buttonfb"
+            android:text="@string/title_signin"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <info.androidhive.shopliv.other.CustomButton
+            android:id="@+id/customButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_register"
+            android:layout_alignRight="@+id/button_register"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="89dp"
+            android:background="@drawable/rounded_border_buttongoogle"
+            android:text="@string/title_signin"
+            android:textColorHint="@color/colorPrimary" />
+    </RelativeLayout>
+
+
+</ScrollView>

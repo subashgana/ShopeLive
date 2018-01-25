@@ -1,14 +1,378 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="info.androidhive.navigationdrawer.fragment.HomeFragment">
+    android:layout_width="match_parent"
+    >
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:alpha="0.3"
-        android:src="@drawable/ic_home_black_24dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
 
-</FrameLayout>
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/myEditText1"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/rounded_border_white_edittext"
+            android:ems="10"
+            android:hint="@string/search_by_brand"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            app:font_name="CocogooseLight" />
+
+        <!--<info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/myEditText2"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/myEditText1"
+            android:layout_alignStart="@+id/myEditText1"
+            android:layout_below="@+id/myEditText1"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_border_white_edittext"
+            android:ems="10"
+            android:hint="@string/title_username"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colortext"
+            app:font_name="CocogooseLight" />-->
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="75dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <info.androidhive.shopliv.other.MyEditText
+                android:id="@+id/myEditText2"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="3"
+                android:background="@drawable/rounded_border_white_edittext"
+                android:ems="10"
+                android:hint="@string/title_country"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="@color/black"
+                app:font_name="CocogooseLight" />
+
+            <info.androidhive.shopliv.other.MyEditText
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@drawable/rounded_border_white_edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/title_city"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColorHint="@color/black"
+                app:font_name="CocogooseLight" />
+
+            <info.androidhive.shopliv.other.MyEditText
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:background="@drawable/rounded_border_white_edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/title_language"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColorHint="@color/black"
+                app:font_name="CocogooseLight" />
+
+        </LinearLayout>
+
+        <info.androidhive.shopliv.other.CustomTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="@string/search_by_category"
+            android:textColor="@color/dot_dark_screen1"
+            android:textSize="24sp"
+            app:font_name="CocogooseBold" />
+        <!--
+            <info.androidhive.shopliv.other.MyEditText
+                android:id="@+id/myEditText2"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/myEditText1"
+                android:layout_alignStart="@+id/myEditText1"
+                android:layout_below="@+id/myEditText1"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/rounded_border_white_edittext"
+                android:ems="10"
+                android:hint="@string/title_username"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colortext"
+                app:font_name="CocogooseLight" />-->
+
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/myEditText4"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/myEditText1"
+            android:layout_alignStart="@+id/myEditText1"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border_white_edittext"
+            android:ems="10"
+            android:hint="@string/title_select_category"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            app:font_name="CocogooseLight" />
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/myEditText5"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/myEditText4"
+            android:layout_alignStart="@+id/myEditText4"
+            android:layout_below="@+id/myEditText4"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border_white_edittext"
+            android:ems="10"
+            android:hint="@string/title_select_sub_category"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            app:font_name="CocogooseLight" />
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/myEditText6"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/myEditText5"
+            android:layout_alignStart="@+id/myEditText5"
+            android:layout_below="@+id/myEditText5"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_border_white_edittext"
+            android:ems="10"
+            android:hint="@string/title_select_sub_category_2"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            app:font_name="CocogooseLight" />
+
+        <info.androidhive.shopliv.other.CustomTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/myEditText6"
+            android:layout_alignStart="@+id/myEditText6"
+            android:layout_below="@+id/myEditText6"
+            android:layout_marginTop="10dp"
+            android:text="@string/title_do_you_want"
+            android:textColor="@color/dot_dark_screen1"
+            android:textSize="24sp"
+            app:font_name="CocogooseBold" />
+
+        <info.androidhive.shopliv.other.CustomCheckbox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignStart="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="20dp"
+            android:text="Handmade"
+            android:textColor="@color/black"
+            app:font_name="CocogooseBold" />
+
+        <info.androidhive.shopliv.other.CustomCheckbox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/checkBox2"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:text="Western"
+            android:textColor="@color/black"
+            app:font_name="CocogooseBold" />
+
+        <info.androidhive.shopliv.other.CustomCheckbox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/checkBox3"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/checkBox3"
+            android:layout_toRightOf="@+id/checkBox3"
+            android:singleLine="true"
+            android:text="Traditional"
+            android:textColor="@color/black" />
+
+
+        <info.androidhive.shopliv.other.CustomTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBox2"
+            android:layout_alignStart="@+id/checkBox2"
+            android:layout_below="@+id/checkBox2"
+            android:layout_marginTop="13dp"
+            android:text="@string/title_select_type_seller"
+            android:textColor="@color/dot_dark_screen1"
+            android:textSize="24sp"
+            app:font_name="CocogooseBold" />
+
+
+        <info.androidhive.shopliv.other.CustomCheckbox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="11dp"
+            android:singleLine="true"
+            android:text="Individual"
+            android:textColor="@color/black"
+            app:font_name="CocogooseBold" />
+
+        <info.androidhive.shopliv.other.CustomCheckbox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox5"
+            android:layout_alignBottom="@+id/checkBox5"
+            android:layout_toEndOf="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:singleLine="true"
+            android:text="Company"
+            android:textColor="@color/black"
+            app:font_name="CocogooseBold" />
+
+
+        <info.androidhive.shopliv.other.CustomTextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBox5"
+            android:layout_alignStart="@+id/checkBox5"
+            android:layout_below="@+id/checkBox5"
+            android:layout_marginTop="16dp"
+            android:text="@string/title_select_type_sellertypes"
+            android:textColor="@color/dot_dark_screen1"
+            android:textSize="24sp"
+            app:font_name="CocogooseBold" />
+
+
+        <info.androidhive.shopliv.other.CustomCheckbox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox8"
+            android:layout_alignBottom="@+id/checkBox8"
+            android:layout_alignLeft="@+id/checkBox5"
+            android:layout_alignStart="@+id/checkBox5"
+            android:singleLine="true"
+            android:text="Luxury"
+            android:textColor="@color/black"
+            app:font_name="CocogooseBold" />
+
+        <info.androidhive.shopliv.other.CustomCheckbox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="26dp"
+            android:layout_toEndOf="@+id/checkBox2"
+            android:layout_toRightOf="@+id/checkBox2"
+            android:singleLine="true"
+            android:text="Premium"
+            android:textColor="@color/black"
+            app:font_name="CocogooseBold" />
+
+        <info.androidhive.shopliv.other.CustomCheckbox
+            android:id="@+id/checkBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox8"
+            android:layout_alignBottom="@+id/checkBox8"
+            android:layout_alignLeft="@+id/checkBox4"
+            android:layout_alignStart="@+id/checkBox4"
+            android:singleLine="true"
+            android:text="Average"
+            android:textColor="@color/black"
+            app:font_name="CocogooseBold" />
+
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/myEditText7"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/checkBox7"
+            android:layout_alignStart="@+id/checkBox7"
+            android:layout_below="@+id/checkBox7"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/rounded_border_white_edittext"
+            android:ems="10"
+            android:hint="@string/search_by_brand"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            app:font_name="CocogooseLight" />
+
+
+        <info.androidhive.shopliv.other.MyEditText
+            android:id="@+id/myEditText8"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/myEditText7"
+            android:layout_alignBottom="@+id/myEditText7"
+            android:layout_alignEnd="@+id/myEditText6"
+            android:layout_alignRight="@+id/myEditText6"
+            android:background="@drawable/rounded_border_white_edittext"
+            android:ems="10"
+            android:hint="@string/search_by_brand"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            app:font_name="CocogooseLight" />
+
+        <info.androidhive.shopliv.other.CustomButton
+            android:id="@+id/btn_test"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/myEditText7"
+            android:layout_alignStart="@+id/myEditText7"
+            android:layout_below="@+id/myEditText7"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/dot_light_screen1"
+            android:background="@drawable/rounded_border_ulta_button"
+            android:text="Reset"
+            android:textColorHint="@color/dot_light_screen1" />
+
+        <info.androidhive.shopliv.other.CustomButton
+            android:id="@+id/btn_test1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/btn_test"
+            android:layout_alignBottom="@+id/btn_test"
+            android:layout_alignLeft="@+id/myEditText8"
+            android:layout_alignStart="@+id/myEditText8"
+            android:background="@drawable/rounded_border_ulta_button"
+            android:text="Search"
+            android:textColor="@color/dot_light_screen1"
+            android:textColorHint="@color/dot_light_screen1" />
+
+    </RelativeLayout>
+</ScrollView>

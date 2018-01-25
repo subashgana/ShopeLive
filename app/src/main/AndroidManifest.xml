@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="info.androidhive.navigationdrawer">
+    package="info.androidhive.shopliv">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,8 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.SplashActivty"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,13 +23,45 @@
         </activity>
         <activity
             android:name=".activity.AboutUsActivity"
-            android:label="@string/activity_title_about_us" />
+            android:label="@string/activity_title_about_us"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.PrivacyPolicyActivity"
-            android:label="@string/activity_title_privacy_policy" />
+            android:label="@string/activity_title_privacy_policy"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SplashActivity"
-            android:label="@string/title_activity_splash"
+            android:name=".activity.MainActivity"
+            android:label="@string/activity_title_privacy_policy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="@string/title_activity_splash_activty"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ForotPasswordActvity"
+            android:label="@string/title_activity_forot_password_actvity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.OTPActivity"
+            android:label="@string/title_activity_otp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.RegitrationOtpActivity"
+            android:label="@string/title_activity_regitration_otp"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
